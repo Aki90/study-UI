@@ -403,6 +403,86 @@ address {
   width: 32px;
   height: 32px; }
 
+.star-rating-13, .star-rating-16, .star-rating-20, .star-rating-24 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .star-rating-13 .ic-star, .star-rating-16 .ic-star, .star-rating-20 .ic-star, .star-rating-24 .ic-star {
+    color: #e0e2e7; }
+    .star-rating-13 .ic-star.is-active, .star-rating-16 .ic-star.is-active, .star-rating-20 .ic-star.is-active, .star-rating-24 .ic-star.is-active {
+      color: #3da5f5; }
+
+.star-rating-13 {
+  font-size: 13px; }
+
+.star-rating-16 {
+  font-size: 13px; }
+
+.star-rating-20 {
+  font-size: 13px; }
+
+.star-rating-24 {
+  font-size: 13px; }
+
+i {
+  font-family: 'tomorrow' !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  font-variant: normal; }
+
+.ic-bell::before {
+  content: '\e900'; }
+
+.ic-bookmark::before {
+  content: '\e901'; }
+
+.ic-bookmark-filled::before {
+  content: '\e902'; }
+
+.ic-caret::before {
+  content: '\e903'; }
+
+.ic-cart::before {
+  content: '\e904'; }
+
+.ic-check::before {
+  content: '\e905'; }
+
+.ic-chevron::before {
+  content: '\e906'; }
+
+.ic-close::before {
+  content: '\e907'; }
+
+.ic-community::before {
+  content: '\e908'; }
+
+.ic-expert::before {
+  content: '\e909'; }
+
+.ic-lock::before {
+  content: '\e90a'; }
+
+.ic-menu::before {
+  content: '\e90b'; }
+
+.ic-new::before {
+  color: #f86d7d;
+  content: '\e90c'; }
+
+.ic-search::before {
+  content: '\e90d'; }
+
+.ic-star::before {
+  content: '\e90e'; }
+
+.ic-store::before {
+  content: '\e90f'; }
+
 .container {
   width: 100%;
   padding: 0 5px;
