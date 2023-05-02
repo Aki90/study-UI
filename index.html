@@ -21,93 +21,78 @@
 </head>
 
 <body>
-  <header class="gnb">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="gnb-wrapper">
-            <div class="gnb-left">
-              <h1 class="logo">
-                <a href="#">
-                  <img src="./assets/images/logo.svg" alt="내일의 집" />
-                </a>
-              </h1>
+  <div data-include-path="./components/gnb.html"></div>
 
-              <nav class="gnb-nav sm-hidden">
-                <h2 class="visually-hidden">메뉴</h2>
-                <ul class="gnb-nav-list">
-                  <li class="gnb-nav-item"><a href="#">커뮤니티</a></li>
-                  <li class="gnb-nav-item is-active">
-                    <a href="#">스토어</a>
-                  </li>
-                  <li class="gnb-nav-item"><a href="#">인테리어시공</a></li>
-                </ul>
-              </nav>
+  <aside class="sidebar sm-only">
+    <header class="sidebar-header">
+      <h1 class="logo">
+        <a href="#">
+          <img src="./assets/images/logo.svg" alt="내일의 집">
+        </a>
+      </h1>
 
-              <button class="gnb-icon-button is-menu sm-only" type="button" aria-label="메뉴 열기 버튼">
-                <i class="ic-menu"></i>
-              </button>
-            </div>
-
-            <div class="gnb-right">
-              <div class="gnb-search lg-only">
-                <div class="input-group">
-                  <i class="ic-search" aria-hidden></i>
-                  <input class="form-input" type="text" placeholder="스토어 검색" />
-                </div>
-              </div>
-
-              <div class="button-group">
-                <button class="gnb-icon-button is-search lg-hidden" type="button" aria-label="검색창 열기 버튼">
-                  <i class="ic-search"></i>
-                </button>
-
-                <a class="gnb-icon-button sm-hidden" href="#" aria-label="스크랩북 페이지로 이동">
-                  <i class="ic-bookmark"></i>
-                </a>
-
-                <a class="gnb-icon-button sm-hidden" href="#" aria-label="내 소식 페이지로 이동">
-                  <i class="ic-bell"></i>
-                </a>
-
-                <a class="gnb-icon-button is-cart" href="#" aria-label="장바구니 페이지로 이동">
-                  <i class="ic-cart"></i>
-                  <strong class="badge">5</strong>
-                </a>
-
-                <div class="my-menu is-active sm-hidden">
-                  <button class="my-menu-button" type="button" aria-label="마이메뉴 열기 버튼">
-                    <img src="./assets/images/img-user-01.jpg" alt="사달라 아저씨" />
-                  </button>
-
-                  <div class="my-menu-content">
-                    <ul class="my-menu-list">
-                      <li class="my-menu-item">
-                        <a href="#">마이페이지</a>
-                      </li>
-                      <li class="my-menu-item">
-                        <a href="#">나의 쇼핑</a>
-                      </li>
-                      <li class="my-menu-item">
-                        <a href="#">이벤트</a>
-                      </li>
-                      <li class="my-menu-item">
-                        <button type="button">로그아웃</button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <button class="btn-primary btn-40 sm-hidden" type="button">
-                글쓰기
-                <i class="ic-chevron" aria-hidden></i>
-              </button>
-            </div>
+      <div class="sidebar-user">
+        <a href="#">
+          <div class="avatar-24">
+            <img src="./assets/images/img-user-01.jpg" alt="사달라 아저씨" />
           </div>
+          <strong class="username">사달라달라사달라달라사달라달라사달라달라</strong>
+        </a>
+      </div>
+    </header>
+
+    <nav class="sidebar-nav">
+      <h2 class="visually-hidden">메뉴</h2>
+      <div class="drawer-menu is-active is-open">
+        <button class="drawer-menu-button" type="button">
+          <i class="ic-store" aria-hidden></i>
+          스토어
+          <i class="ic-chevron" aria-hidden></i>
+        </button>
+        <div class="drawer-menu-content">
+          <ul class="drawer-menu-list">
+            <li class="drawer-menu-item"><a href="#">스토어홈</a></li>
+            <li class="drawer-menu-item"><a href="#">신혼가구</a></li>
+            <li class="drawer-menu-item"><a href="#">카테고리</a></li>
+            <li class="drawer-menu-item">
+              <a href="#">
+                기획전
+                <i class="ic-new" aria-label="새로운 기획전"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-  </header>
+
+      <div class="drawer-menu is-open">
+        <button class="drawer-menu-button" type="button">
+          <i class="ic-store" aria-hidden></i>
+          스토어(ex2)
+          <i class="ic-chevron" aria-hidden></i>
+        </button>
+        <div class="drawer-menu-content">
+          <ul class="drawer-menu-list">
+            <li class="drawer-menu-item"><a href="#">스토어홈2</a></li>
+            <li class="drawer-menu-item"><a href="#">신혼가구2</a></li>
+            <li class="drawer-menu-item"><a href="#">카테고리2</a></li>
+            <li class="drawer-menu-item"><a href="#">기획전</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-user-menu">
+        <ul class="user-menu-list">
+          <li class="user-menu-item"><a href="#">마이페이지</a></li>
+          <li class="user-menu-item"><a href="#">나의 쇼핑</a></li>
+          <li class="user-menu-item"><a href="#">스크랩북</a></li>
+          <li class="user-menu-item"><a href="#">알림</a></li>
+          <li class="user-menu-item"><a href="#">이벤트</a></li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+  <div class="overlay" aria-hidden></div>
 </body>
 
 </html>
