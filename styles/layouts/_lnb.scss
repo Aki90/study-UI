@@ -1,5 +1,4 @@
 .lnb {
-  // border-bottom: 1px solid $border;
   overflow-x: auto;
   &::-webkit-scrollbar {
     display: none;
@@ -40,7 +39,7 @@
 
   @include responsive(T) {
     overflow-x: visible;
-    border: 1px solid $border;
+    border-bottom: 1px solid $border;
     height: 50px;
 
     &-list {
