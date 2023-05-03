@@ -1,0 +1,60 @@
+.lnb {
+  // border-bottom: 1px solid $border;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-list {
+    @include inline-flexbox(start);
+    position: relative;
+    left: -8px;
+    white-space: nowrap;
+    height: 40px;
+    border-bottom: 1px solid $border;
+    margin-left: -15px;
+    padding: 0 7px;
+  }
+
+  &-item {
+    &.is-active {
+      a {
+        color: $blue;
+        border-bottom-color: $blue;
+      }
+    }
+
+    a {
+      @include inline-flexbox();
+      @include text-style(13, $dark);
+      padding: 0 8px;
+      height: 40px;
+      font-weight: 700;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  @include responsive(T) {
+    overflow-x: visible;
+    border: 1px solid $border;
+    height: 50px;
+
+    &-list {
+      height: auto;
+      padding: 0;
+      margin-left: 0;
+      border-bottom: none;
+    }
+
+    &-item {
+      a {
+        @include text-style(14);
+        height: 50px;
+      }
+    }
+  }
+}
