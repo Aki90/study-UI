@@ -1,12 +1,125 @@
 .product-carousel {
+  $grid-margin: 15px;
+  position: relative;
+
+  &-slider {
+    margin: 0-#{$grid-margin};
+  }
+
   &-thumbnail {
-    // 개발용
-    display: none;
+    @include pos-center-x;
+    bottom: 16px;
+
+    .thumbnail-list {
+      @include flexbox;
+    }
+
+    .thumbnail-item {
+      @include flexbox;
+      margin: 0 4px;
+
+      button {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $white;
+        opacity: 0.7;
+        transition: transform 100ms ease-in-out;
+      }
+
+      img {
+        display: none;
+      }
+
+      &.tns-nav-active {
+        button {
+          width: scale(1.33333);
+          opacity: 1;
+        }
+      }
+    }
   }
 
   img {
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  @include responsive(T) {
+    padding-right: 30px;
+
+    &.tns-nav-active {
+      button {
+        transform: none;
+      }
+    }
+
+    &-slider {
+      margin: 0 0 8px 0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    &-thumbnail {
+      position: static;
+      transform: none;
+    }
+
+    .thumbnail-list {
+      @include flexbox(start);
+    }
+
+    .thumbnail-item {
+      margin: 0 8px 0 0;
+
+      &.tns-nav-active {
+        button {
+          border: 2px solid $blue;
+          transform: none;
+        }
+      }
+      button {
+        @include flexbox;
+        opacity: 1;
+        width: 56px;
+        height: 56px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      img {
+        display: block;
+        width: 56px;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    @include flexbox(end, start);
+    flex-direction: row-reverse;
+
+    &-slider {
+      width: 500px;
+      height: 500px;
+    }
+
+    &-thumbnail {
+      margin-right: 8px;
+    }
+
+    .thumbnail-list {
+      flex-direction: column;
+    }
+
+    .thumbnail-item {
+      margin-right: 0;
+      margin-bottom: 8px;
+      button,
+      img {
+        width: 75px;
+        height: 75px;
+      }
+    }
   }
 }
