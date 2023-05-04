@@ -1,0 +1,12 @@
+.product-carousel {
+  &-thumbnail {
+    // 개발용
+    display: none;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
