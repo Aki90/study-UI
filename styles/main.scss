@@ -4,6 +4,7 @@
 @import './constants/dimensions';
 @import './constants/box-shadows';
 @import './constants/z-index';
+@import './constants/grids';
 
 @import './base/fonts';
 @import './base/normalize';
@@ -31,10 +32,12 @@
 @import './components/drawer-menu';
 @import './components/search-history';
 @import './components/breadcrumb';
-@import './components/product-carousel';
-@import './components/product-info';
+@import './components/product/product-carousel';
+@import './components/product/product-info';
 @import './components/order-form';
 @import './components/checkout-card';
+@import './components/product/product-section-header';
+@import './components/product/product-table';
 
 @import './layouts/grids';
 @import './layouts/gnb';
@@ -44,3 +47,4 @@
 @import './layouts/lnb';
 @import './layouts/global-header';
 @import './layouts/global-footer';
+@import './layouts/product-tab';
