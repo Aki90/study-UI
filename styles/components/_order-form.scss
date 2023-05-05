@@ -13,6 +13,10 @@
     }
   }
 
+  .order-checkouts {
+    margin-bottom: 20px;
+  }
+
   .order-summary {
     @include flexbox(between);
     margin-bottom: 20px;
