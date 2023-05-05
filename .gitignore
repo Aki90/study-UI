@@ -3,4 +3,4 @@ node_modules/
 
 # css
 *.css
-styles.css.map
+*.css.map
