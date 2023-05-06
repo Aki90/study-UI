@@ -34,12 +34,16 @@
 @import './components/breadcrumb';
 @import './components/product/product-carousel';
 @import './components/product/product-info';
-@import './components/order-form';
-@import './components/checkout-card';
 @import './components/product/product-section';
 @import './components/product/product-section-header';
 @import './components/product/product-table';
 @import './components/product/product-spec';
+@import './components/product/product-review';
+@import './components/order-form';
+@import './components/checkout-card';
+@import './components/review/review-scoreboard';
+@import './components/review/review-card';
+@import './components/score-stats';
 
 @import './layouts/grids';
 @import './layouts/gnb';
