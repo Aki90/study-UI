@@ -1,14 +1,11 @@
 window.addEventListener('load', () => {
-  const drawerMenuButtonList = document.querySelectorAll(
-    '.sidebar-nav .drawer-menu-button'
-  );
+  const sidebar = document.querySelector('.sidebar');
 
-  function toggleDrawerMenu() {
-    const drawerMenu = this.parentNode;
+  function toggleDrawerMenu(e) {
+    const targetElem = e.target;
+    const drawerMenu = targetElem.parentNode;
     drawerMenu.classList.toggle('is-open');
   }
 
-  drawerMenuButtonList.forEach((button) => {
-    button.addEventListener('click', toggleDrawerMenu);
-  });
+  sidebar.addEventListener('click', toggleDrawerMenu);
 });
