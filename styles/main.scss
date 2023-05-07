@@ -17,6 +17,7 @@
 @import './mixins/flexbox';
 @import './mixins/star-rating';
 @import './mixins/line-clamp';
+@import './mixins/truncate';
 
 @import './modules/tags';
 @import './modules/avatar';
@@ -44,13 +45,14 @@
 @import './components/product/product-shipment';
 @import './components/product/product-card';
 @import './components/product/product-recommendation';
-
 @import './components/order-form';
 @import './components/checkout-card';
 @import './components/review/review-scoreboard';
 @import './components/review/review-card';
 @import './components/score-stats';
 @import './components/inquiry-card';
+@import './components/gallery-card';
+@import './components/user-gallery';
 
 @import './layouts/grids';
 @import './layouts/gnb';
