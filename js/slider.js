@@ -1,4 +1,4 @@
-setTimeout(() => {
+window.addEventListener('load', () => {
   const commonOptions = {
     navAsThumbnails: true,
     arrowKeys: true,
@@ -36,4 +36,4 @@ setTimeout(() => {
     navContainer: '.user-gallery.is-desktop .thumbnail-list',
     loop: false,
   });
-}, 500);
+});
